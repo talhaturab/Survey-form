@@ -1,0 +1,118 @@
+# Survey-form
+Survey form on hobby
+<div class="container">
+  <header class="header">
+<h1 id="title" class="text-center">Survey Form</h1>
+<p id="description" class="description text-center"> Thank you for taking the time to fill this form</p>
+    </header>
+    
+<form id="survey-form">
+
+  <div class="form-group">
+  <label  id="name-label" for="name">Name</label>
+  <input 
+         id="name"
+         tpye="Name"
+         class="form-control" 
+         placeholder="e.g Talha Turab"
+         required/>
+  </div>
+  
+  <div class="form-group">    
+  <label id="email-label" for="email">Email</label>
+  <input 
+         class="form-control"
+         id="email"
+         type="email"
+         placeholder="e.g Turabtalha@gmail.com"
+         required>
+  </div>
+    
+  <div class="form-group">
+    <label id="number-label" for="Number">Age<span class="clue"> (optional)</span></label>
+  <input 
+         name="age"
+         id="number"
+         type="number"
+         class="form-control"
+         placeholder="Age"
+         min="10"
+         max="99"/>
+  </div>
+  
+  <div class="form-group">
+  <p>hobby</p>
+  <select id="dropdown" class="form-control" name="hobby" required>
+    <option disabled selected value>Select the following</option> 
+    <option value="cricket">Cricket</option>
+    <option value="Football">Football</option>
+    <option id="dropdown" value="Volleyball">Volleyball</option></select>
+    </div>
+  <div>
+    <p>Would you recomend your hobby to your friend?</p>
+  
+    <label
+           for="yes"><input
+           class="input-radio"
+           type="radio"
+           id="yes"
+           name="opinion"
+           value="yes"/>Yes</label>
+  
+    <label for="No"><input 
+           class="input-radio"
+           type="radio"
+           id="No"
+           name="opinion"
+           value="No"/>No</label>
+    
+  <label for="Maybe"><input
+           class="input-radio"
+           type="radio"
+           id="Maybe"
+           name="opinion"
+           value="Maybe"/>Maybe</label>
+  </div>
+    
+  <div class="form-group">
+    <p>what is your favourite feature about your hobby<p>
+      <select id="most-lke" name="reasons-3" class="form-control" >
+        <option disabled selected value>pick your reason</option>
+        <option value="entertain">amuse me</option>
+        <option value="healthy">keeps me away from bad activities</option>
+        <option value="refresh">helps me refresh</option>
+        <option value="accomplishment">gives me sense of accomplishment</option>
+      </select>
+      </div>
+
+  <div class="form-group">
+    <p>what are the benefits of hobby according to you <span class="clue"> check all that apply</span><p>
+    
+  <label for="yes-1"><input class="input-checkbox" id="yes-1" type="Checkbox" name="improve" value="health" >
+  Keeps Healthy</label>
+
+  <label for="no-1">
+  <input class="input-checkbox" id="no-1" type="Checkbox" name="improve" value="entertainment" >Keeps me entertained and busy</label>
+  
+  <label for="perhaps">
+    <input class="input-checkbox" id="perhaps" type="Checkbox" name="improve" value="perhaps" >Chance to show work to friends</label>
+  </div>
+  
+  <div class="form-group">  
+  <p>Any comments or suggestions</p>
+  <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="place your suggestions here"
+            ></textarea></div>
+  
+  <div class="form-group">
+  <button
+         type="submit"
+         id="submit"
+         class="submit-button"
+          >Submit</button>
+  </div>
+</form>
+  
